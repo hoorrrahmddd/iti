@@ -1,0 +1,66 @@
+
+.body{
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.top_message{
+    place-self: center ;
+    background-color:rgb(26,26,26);
+    border: 1px solid rgb(36,36,36);
+    color:rgb(255,255,255);
+    font-family:'urbanist'; 
+    width:100%;
+    margin: auto;
+    line-height: 150% ;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+
+
+.top_link{
+    color:rgb(217,217,217);
+    padding:10px ;   
+}
+
+
+
+.top_link:hover {
+     color:rgb(112,59,247); 
+}
+
+
+.nav{
+    background-color: rgb(26,26,26);
+    width: 100%;
+    display: flex;
+
+}
+.list{
+    list-style: none;
+    display:flex;
+    gap: 30px;
+    place-self: center;
+    justify-content: center;
+
+
+
+}
+.list li a{
+    text-decoration: none;
+    color:white;
+}
+
+.contact{
+    right:0;
+}
+
+.logo{
+    width: 150px;
+    padding: 10px;
+
+}
+
