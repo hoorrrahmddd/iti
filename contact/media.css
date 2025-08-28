@@ -1,0 +1,29 @@
+
+/* Small screens (sm: ≥640px) */
+@media (min-width: 640px) {
+    .card {
+      flex: 1 1 calc(50% - 10px);
+    }
+  }
+  
+  /* Medium screens (md: ≥768px) */
+  @media (min-width: 768px) {
+    .card {
+        flex: 1 1 calc(33.333% - 10px);
+    }
+  }
+  
+  /* Large screens (lg: ≥1024px) */
+  @media (min-width: 1024px) {
+    .card {
+      flex: 0 1 calc(25% - 15px);
+    }
+  }
+  
+  /* Extra large screens (xl: ≥1280px) */
+  @media (min-width: 1280px) {
+    .card {
+      flex: 1 1 calc(20% - 15px); 
+    }
+  }
+  
