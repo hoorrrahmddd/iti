@@ -9,11 +9,9 @@ body{
 .top_message{
     place-self: center ;
     background-color:rgb(26,26,26);
-    border: 1px solid rgb(36,36,36);
     color:rgb(255,255,255);
     font-family:'urbanist'; 
     width:100%;
-    margin: auto;
     line-height: 150% ;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -39,7 +37,7 @@ body{
     background-color: rgb(26,26,26);
     width: 100%;
     display: flex;
-    margin:1px;
+    margin-top:1px;
 }
 
 
@@ -70,6 +68,7 @@ body{
     border: 1px rgb(38,38,38) solid;
     background-color: rgb(20,20,20);
     border-radius: 10%;
+   
       
 }
 
@@ -92,8 +91,8 @@ body{
 .hero_section{
     display: flex;
     width: 100%; 
-    min-height: 100vh;
-    justify-content: space-between;
+    min-height: 100vh;  
+   
 
 }
 
@@ -170,6 +169,7 @@ body{
     color: white;
     display: flex;
     gap: 20px;
+   justify-content: space-evenly; 
  
 
    
@@ -197,7 +197,7 @@ body{
 .image{
     flex: 1;
      display: flex; 
-    justify-content:center;
+    justify-content:flex-end;
     
 }
 
@@ -207,29 +207,292 @@ body{
  
 }
 
+/* -------------new section------------- */
 
-@media(max-width:990px){
+.h-section{
+    width: 100%;
+    margin:20px 0 ;
+    display: relative;
+
+}
+.container-2{
+    display: flex;
+    justify-content:space-evenly; 
+    display: relative;
+    gap:10px;
+    border:5px rgb(20,20,20) solid; 
+    padding: 10px 0;
+   
+
+}
+.container-2 div{
+    color:white;
+    border:rgb(38,38,38) solid 1px ;
+    background-color:rgb(26,26,26);
+    font-family:'urbanist';
+    font-size:15px;
+    font-weight:600px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    position: relative;
+}
+.arrow{  
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 30px;
+}
+
+/* -------------------new-section------------------------- */
+
+.properties-section{
+    width: 100%;
+    min-height: 100vh;  
+   
+}
+
+.container-3{
+    position: relative;
+}
+.container-3 p:first-of-type{
+  color: white;
+  font-family: 'urbanist';
+  font-size: 30px;
+  font-weight: 600;
+}
+.container-3 p:nth-of-type(2){
+    color:rgb(77,77,77);
+    font-family: 'urbanist';
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+.container-3 a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    font-family:  'urbanist';
+    background-color:rgb(26, 26, 26);
+    padding: 15px;
+    border:rgb(38,38,38) 2px solid;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+}
+.container-3 a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(112, 59, 247, 0.8) ;
+}
+
+.properties{
+    display: flex;
+    gap:10px;
+
+}
+.container-property{
+    border: rgb(38,38,38) solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+   color: white;
+   font-family: 'urbanist';
+  
+
+}
+.details-1{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start ;
+}
+.details-1 p:first-of-type{
+   font-family: 'urbanist';
+   font-size: 26px;
+   font-weight:600;
+}
+.details-1 p:nth-of-type(2){
+    font-family: 'urbanist' ;
+    font-size:18px;
+    font-weight: 500;
+    color:rgb(153,153,153);
+}
+
+.details-2{
+    display: flex;
+    gap: 10px;
+}
+.details-2 p{
+    border:rgb(38,38,38) 1px solid;
+    border-radius: 20px;
+    padding: 9px; 
+    background-color: rgb(26,26,26);
+
+}
+.details-3{
+    display: flex;
+    gap: 70px;
+}
+.price{
+    color: rgb(153,153,153);
+    font-size:20px;
+    font-weight: 500;
+}
+.price-num{
+    color:white;
+    font-size:26px ;
+    font-weight: 600;
+
+}
+.details-3 a{
+    text-decoration: none;
+    color:white;
+    background-color:rgb(112, 59, 247) ;
+    border-radius:5px ;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+   transition: all 0.5s ease;
+
+}
+
+.details-3 a:hover{
+    transform: scale(1.1);
+    background-color:rgb(112, 20, 247) ;
+}
+
+/* --------------------new section-------------------- */
+.opinions-section{
+    width: 100%;
+    min-height: 100vh;  
+    /* display: flex; */
+}
+.container-4{
+   position: relative;
+
+}
+.container-4 p:first-of-type{
+  color: white;
+  font-family: 'urbanist';
+  font-size: 30px;
+  font-weight: 600;
+
+}
+.container-4 p:nth-of-type(2){
+    color:rgb(77,77,77);
+    font-family: 'urbanist';
+    font-size: 15px;
+    font-weight: 500;
+}
+.container-4 a{
+ text-decoration: none;
+    color: white;
+    position: absolute;
+    right:40px;
+    top:0;
+    font-family:  'urbanist';
+    background-color:rgb(26, 26, 26);
+    padding: 15px;
+    border:rgb(38,38,38) 2px solid;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+}
+.container-4 a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(112, 59, 247, 0.8) ;
+}
+.cards-opinion{
+    display: flex;
+    gap: 10px;
+
+}
+.container-opinion{
+    border: rgb(38,38,38) 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-family: 'urbanist';
+    background-color:rgb(20,20,20) ;
+    margin-top: 20px;
+
+}
+.container-opinion p:first-of-type{
+ font-size: 24px;
+ font-weight: 600;
+}
+
+.user{
+    display: flex;
+    gap: 30px;
+
+}
+.name{
+   font-weight: 500;
+   font-size: 18px;
+}
+
+.country{
+    color: rgb(153,153,153);
+    font-size: 18px;
+    font-weight:500 ;
+
+}
+
+
+
+
+
+
+
+@media(max-width:992px){
     .container{
-         margin: 90px 0px 5px 60px;
+         margin: 90px 0px 5px 35px;
+         max-width: 40%;
+         justify-content: flex-start;
     }
     .hero_text{
         font-size: 35px;
     }
     .discr_text{
         font-size: 15px;
-        max-width: 50%;
+       
+    }
+    .button{
+        gap:10px;
+    }
+    .Learn_btn{
+        font-size:15px ;
+    }
+    .browse_btn{
+        font-size: 15px;
     }
     .cards{
    max-width: 50%;
-
+   gap: 10px;
+   justify-content: space-around;
+    }
+    .image{
+        width: 100%;
+        justify-content: flex-end;
     }
    
     .img{
-       object-fit: cover;
-       display: block;
-       width: 100%;
+       width: 100%; 
        height: auto;
-       width: 500px;
-       flex: 1;
+       max-width:470px ;
+      
     }
-}
+    .container-2{
+        gap: 5px;
+    }
+    }
+
+    @media(max-width:760px){
+        body{
+            background-color: aliceblue;
+        }
+
+    }
