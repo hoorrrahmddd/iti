@@ -5,20 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Page</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
-  <div class="top_message">✨Discover Your Dream Property with Estatein <a href="" class="top_link">Learn More</a></div>
+  <div class="top_message">✨Discover Your Dream Property with Estatein <a href="" class="top_link">Learn More</a>
+  </div>
     <header>
  <div class="hero-section">
   <div class="container">
     <nav class="nav">
       <img src="Logo.png"alt="logo"class="logo">
       <ul class="list">
-          <li><a href="../home.html"class="nav_content">Home</a></li>
+          <li><a href=""class="nav_content">Home</a></li>
           <li><a href=""class="nav_content">About Us</a></li>
           <li><a href=""class="nav_content">properties</a></li>
           <li><a href=""class="nav_content">Services</a></li>
@@ -157,7 +158,7 @@
 </div>
 <div class="sec-five">
 <div class="container">
-<div class="container-five">
+<div class="container-five" id="offices-container">
   <div class="item-five" >
     <div class="txt-five">
       <p>Main Headquarters</p>
@@ -239,75 +240,106 @@
     </div>
   </div>
 </div>
-<!-- Footer Section -->
-<footer style="background-color:#111; color:#fff; padding:40px 0; font-family:Arial, sans-serif;">
-  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between;">
+<!--- -----------------------Footer Section ----------------- -->
+<footer >
+
+  <div class="container">
+    <div class="footer-body" >
     
-    <!-- Logo & Newsletter -->
-    <div style="flex:1; min-width:250px; margin-bottom:20px;">
-      <img src="ebe522ff-c0c6-4f0d-89f0-0e05870b5c5e.png" alt="Estatein Logo" style="width:120px; margin-bottom:20px;">
-      <div style="display:flex;">
-        <input type="email" placeholder="Enter Your Email" style="flex:1; padding:10px; border:none; border-radius:4px 0 0 4px;">
-        <button style="padding:10px 15px; border:none; background-color:#5c4def; color:#fff; border-radius:0 4px 4px 0; cursor:pointer;">&#9993;</button>
-      </div>
-    </div>
-    
-    <!-- Footer Links -->
-    <div style="flex:3; display:flex; flex-wrap:wrap; justify-content:space-between; min-width:600px;">
-      
-      <div style="margin-bottom:20px;">
-        <h4 style="margin-bottom:10px;">Home</h4>
-        <p>Hero Section</p>
-        <p>Features</p>
-        <p>Properties</p>
-        <p>Testimonials</p>
-        <p>FAQ's</p>
-      </div>
-      
-      <div style="margin-bottom:20px;">
-        <h4 style="margin-bottom:10px;">About Us</h4>
-        <p>Our Story</p>
-        <p>Our Works</p>
-        <p>How It Works</p>
-        <p>Our Team</p>
-        <p>Our Clients</p>
-      </div>
-      
-      <div style="margin-bottom:20px;">
-        <h4 style="margin-bottom:10px;">Properties</h4>
-        <p>Portfolio</p>
-        <p>Categories</p>
-      </div>
-      
-      <div style="margin-bottom:20px;">
-        <h4 style="margin-bottom:10px;">Services</h4>
-        <p>Valuation Mastery</p>
-        <p>Strategic Marketing</p>
-        <p>Negotiation Wizardry</p>
-        <p>Closing Success</p>
-        <p>Property Management</p>
-      </div>
-      
-      <div style="margin-bottom:20px;">
-        <h4 style="margin-bottom:10px;">Contact Us</h4>
-        <p>Contact Form</p>
-        <p>Our Offices</p>
-      </div>
-    </div>
-  </div>
   
-  <!-- Bottom Footer -->
-  <div style="border-top:1px solid #333; margin-top:20px; padding-top:15px; text-align:center; display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:20px auto 0 auto;">
-    <p style="margin:0;">&copy;2023 Estatein. All Rights Reserved. <a href="#" style="color:#fff; text-decoration:underline;">Terms & Conditions</a></p>
-    <div>
-      <a href="#" style="margin:0 5px; color:#fff;">Facebook</a>
-      <a href="#" style="margin:0 5px; color:#fff;">LinkedIn</a>
-      <a href="#" style="margin:0 5px; color:#fff;">Twitter</a>
-      <a href="#" style="margin:0 5px; color:#fff;">YouTube</a>
+      <div class="footer-logo">
+        <img src="Logo.png" alt="Estatein Logo" style="width: 150px;" >
+        <div class="footer-email">
+          <label class="email-label">
+            <img src="emailplus.png" alt="Email Icon" class="icon-left">
+            <input type="email" placeholder="Enter Your Email">
+            <img src="send.png" alt="Send Icon" class="icon-right">
+          </label>
+        </div>
+        
+      </div>
+      
+     
+      <div class="footer-txt" >
+        
+        <div class="footer-item" >
+          <p >Home</p>
+          <p>Hero Section</p>
+          <p>Features</p>
+          <p>Properties</p>
+          <p>Testimonials</p>
+          <p>FAQ's</p>
+        </div>
+        
+        <div class="footer-item" >
+          <p >About Us</p>
+          <p>Our Story</p>
+          <p>Our Works</p>
+          <p>How It Works</p>
+          <p>Our Team</p>
+          <p>Our Clients</p>
+        </div>
+        
+        <div class="footer-item" >
+          <p >Properties</p>
+          <p>Portfolio</p>
+          <p>Categories</p>
+        </div>
+        
+        <div class="footer-item">
+          <p >Services</p>
+          <p>Valuation Mastery</p>
+          <p>Strategic Marketing</p>
+          <p>Negotiation Wizardry</p>
+          <p>Closing Success</p>
+          <p>Property Management</p>
+        </div>
+        
+        <div  class="footer-item">
+          <p >Contact Us</p>
+          <p>Contact Form</p>
+          <p>Our Offices</p>
+        </div>
+      </div>
     </div>
+    
+   
+
   </div>
 </footer>
-
+<!-- footer complete also -->
+<div class="footer-two">
+  <div class="container">
+    <div  class="Bottom-Footer">
+      <div class="Bottom-Footer-txt">
+        <p >&copy;2023 Estatein. All Rights Reserved. <a href="#" style="color: #fff; " >Terms & Conditions</a></p>
+      </div>
+      <div class="container-social-logo">
+       <div class="social-logo">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook-f" style="color: #ffffff; font-size:20px;"></i>
+        </a>  
+       </div>
+       <div class="social-logo">
+        <a href="https://www.linkedin.com/login">
+          <i class="fa-brands fa-linkedin" style="color: #ffffff; font-size:20px;"></i>
+        </a>
+       </div>
+       <div class="social-logo">
+        <a href="https://twitter.com/?&">
+          <i class="fa-brands fa-twitter" style="color: #ffffff; font-size:20px; "></i>
+        </a>
+       </div>
+       <div class="social-logo">
+        <a href="https://www.youtube.com/">
+          <i class="fa-brands fa-youtube" style="color: #ffffff; font-size:20px;"></i>
+        </a>
+       </div>
+      </div>
+    </div>
+</div>
+</div>
+<script src="contact.js"></script>
 </body>
 
 </html>
