@@ -23,86 +23,124 @@ body
 ul {
     list-style-type: none;
 }
-.hero-section
-{
-  background-color: #191919;
-}
-.top_message{
-  place-self: center ;
-  background-color:rgb(26,26,26);
-  color:rgb(255,255,255);
-  font-family:'urbanist'; 
-  width:100%;
-  line-height: 150% ;
-  padding-top: 18px;
-  padding-bottom: 18px;
+.top_message {
+  background-color: #1A1A1A;
+  color: #fff;
   text-align: center;
+  padding: 18px 0;
+  font-family: 'Urbanist';
+  line-height: 1.5;
 }
 
-
-.top_link{
-  color:rgb(217,217,217);
-  padding:10px ;   
+.top_link {
+  color: #D9D9D9;
+  padding: 0 10px;
+  text-decoration: none;
 }
-
-
 
 .top_link:hover {
-   color:rgb(112,59,247); 
+  color: #703BF7;
 }
 
+/* Hero Section */
+.hero-section {
+  background-color: #191919;
+}
 
-/*------------------- nav-bar--------------------- */
-.nav{
-  background-color: rgb(26,26,26);
-  width: 100%;
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Nav */
+.nav {
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A1A1A;
+  padding: 10px 20px;
 }
-
-
-.list{
-  list-style: none;
-  display:flex;
-  gap: 30px;
-  justify-content: center; 
-  width: 100%;
-  margin: auto; 
-
-}
-
-
-.nav_content{
-  text-decoration: none;
-  color:white;
-  font-family: 'urbanist';
-  padding: 10px;  
-}
-
-
-.contact{
-  text-decoration: none;
-  font-family: 'urbanist';
-  color:white;
-  padding:10px;
-  border: 1px rgb(38,38,38) solid;
-  background-color: rgb(20,20,20);
-  border-radius: 10%;
- 
-    
-}
-
-.nav_content:hover{
-  border: 1px rgb(38,38,38) solid;
-  background-color: rgb(20,20,20);
-  border-radius: 10%;
-  box-shadow: 0 0 5px rgba(112, 59, 247, 0.9) ;
-}
-
 
 .logo{
   width: 150px;
   padding: 10px;
+}
+
+/* Hamburger Menu - Mobile */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Nav Links - Mobile First */
+
+
+.list {
+  display: none;
+  position: absolute;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: #191919;
+  gap: 10px;
+  padding: 10px 0;
+}
+.list ul
+{
+  display: flex;  
+  flex-direction: column;
+ 
+  gap: 10px;
+}
+/* .list  {
+  display: flex; 
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+  width: 50%;
+  background-color: #1A1A1A;
+} */
+/* .list ul:first-child
+{
+  display: flex;
+  flex-direction: row;
+} */
+
+.list.show {
+  display: flex;
+}
+
+.nav_content {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.contact {
+  color: white;
+  padding: 10px;
+  border: 1px #262626 solid;
+  background-color: #141414;
+  border-radius: 10%;
+}
+
+.nav_content:hover, .contact:hover {
+  border: 1px #262626 solid;
+  background-color: #141414;
+  box-shadow: 0 0 5px rgba(112, 59, 247, 0.9);
 }
 .sec-two , .sec-four
 {
@@ -134,6 +172,7 @@ ul {
   padding-bottom: 20px;
   padding-top: 20px;
   gap: 10px 10px;
+
  
 }
 .card
@@ -147,11 +186,13 @@ ul {
   justify-content: center; 
   align-items: center;     
   gap: 10px; 
-/* position: relative; */
+position: relative;
+
 background-color: #191919;
 padding: 40px;
 
 }
+
 .card:hover
 {
 
@@ -160,20 +201,20 @@ padding: 40px;
   /* border-radius: 10%; */
   box-shadow: 0 0 5px rgba(112, 59, 247, 0.9) ;
 }
-/* .arrow
+.arrow
 {
   position: absolute;
-  top: 0;
- right: 0;
- width: 10px;
- height: auto;
-} */
+  top:0;
+  right: 0;
+  width: 30px;
+  /* height: auto; */
+}
 
 .card p
 { 
   color: white;
 }
- .card img
+ .card img:first-child
 {
 width: 20%;
 }
@@ -406,6 +447,8 @@ margin-bottom: 10px;
  {
   display: flex;
 justify-content: space-between;
+flex-direction: column; /* column on mobile */
+  gap: 20px;
 padding: 50px 0;
  }
 .footer-logo
@@ -444,11 +487,16 @@ padding: 50px 0;
 }
  .footer-txt
  {
-  display: flex;
-  gap: 50px;
- 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  /* gap: 50px; */
+ gap: 10px;
  }
 
+ /* zyda */
+ .footer-item:nth-child(odd) {
+  margin-bottom: 10px;
+}
  .footer-txt p {
 color: whitesmoke;
  }
@@ -464,6 +512,8 @@ color: whitesmoke;
  .Bottom-Footer
  {
   display: flex;
+  /* هنا  */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
