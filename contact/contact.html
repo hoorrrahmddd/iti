@@ -7,28 +7,45 @@
   <title>Contact Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="media-contact.css">
 </head>
 
 <body>
   <div class="top_message">✨Discover Your Dream Property with Estatein <a href="" class="top_link">Learn More</a>
   </div>
-    <header>
- <div class="hero-section">
-  <div class="container">
-    <nav class="nav">
-      <img src="Logo.png"alt="logo"class="logo">
-      <ul class="list">
-          <li><a href=""class="nav_content">Home</a></li>
-          <li><a href=""class="nav_content">About Us</a></li>
-          <li><a href=""class="nav_content">properties</a></li>
-          <li><a href=""class="nav_content">Services</a></li>
-          <li><a href="" class="contact">Contact Us</a></li>
-      </ul> 
-  </nav>
-  </div>
- </div>
-    </header>
+  <header>
+    <div class="hero-section">
+      <div class="container">
+        <nav class="nav">
+         <div>
+          <img src="Logo.png" alt="logo" class="logo">
+         </div>
+  
+     
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+  
+          <!-- Navigation Links -->
+         <div class="list">
+          <ul >
+            <li><a href="../home.html" class="nav_content">Home</a></li>
+            <li><a href="" class="nav_content">About Us</a></li>
+            <li><a href="" class="nav_content">Properties</a></li>
+            <li><a href="" class="nav_content">Services</a></li>
+            
+          </ul>
+          <ul >
+            <li><a href="/contact/contact.html" class="contact">Contact Us</a></li>
+          </ul>
+         </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
   <div class="sec-two">
     <div class="container">
       <div>
@@ -44,23 +61,23 @@
 
       <img src="email.png" alt="">
       <p>info@estatein.com</p>
-      <!-- <img src="arrow.png" alt="" class="arrow"> -->
+      <img src="../Icon.png" alt="" class="arrow">
 
     </div>
     <div class="card">
       <img src="telephone.png" alt="">
       <p>+1 (123) 456-7890</p>
-      <!-- <img src="arrow.png" alt="" class="arrow"> -->
+      <img src="../Icon.png" alt="" class="arrow">
     </div>
     <div class="card">
       <img src="location.png" alt="">
       <p>Main Headquarters</p>
-      <!-- <img src="arrow.png" alt="" class="arrow"> -->
+      <img src="../Icon.png" alt="" class="arrow">
     </div>
     <div class="card">
       <img src="logo-circle.png" alt="">
       <p>instgram Linkedin Facebook </p>
-      <!-- <img src="arrow.png" alt="" class="arrow"> -->
+      <img src="../Icon.png" alt="" class="arrow">
     </div>
   </div>
   <div class="sec-two">
@@ -185,9 +202,9 @@
     </div>
     <div class="item-five" >
       <div class="txt-five">
-        <p>Main Headquarters</p>
-      <p>123 Estatein Plaza, City Center, Metropolis</p>
-      <p>Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.</p>
+        <p>Regional Offices</p>
+      <p>456 Urban Avenue, Downtown District, Metropolis</p>
+      <p>Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.</p>
       </div>
       <div class="logo-five"> 
         <div class="logo-five-item">
@@ -339,7 +356,17 @@
     </div>
 </div>
 </div>
-<script src="contact.js"></script>
+<script src="contact.js">
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+const navList = document.querySelector('.list');
+
+hamburger.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});
+
+</script>
 </body>
 
 </html>
