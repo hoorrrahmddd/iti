@@ -1,0 +1,68 @@
+{
+    "hero": {
+      "headline": "✨Discover Your Dream Property with Estatein",
+      "subtext": "Learn More",
+      "nav": ["Home", "About Us", "Properties", "Services", "Contact Us"]
+    },
+    "contactSection": {
+      "headline": "Get in Touch with Estatein",
+      "description": "Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or feedback you may have. Whether you're looking to buy or sell a property, explore investment opportunities, or simply want to connect, we're just a message away. Reach out to us, and let's start a conversation.",
+      "email": "info@estatein.com",
+      "phone": "+1 (123) 456-7890",
+      "headquarters": "Main Headquarters",
+      "socials": ["Instagram", "LinkedIn", "Facebook"]
+    },
+    "contactForm": {
+      "formTitle": "Let's Connect",
+      "formDescription": "We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein.",
+      "fields": {
+        "firstName": "Hoor",
+        "lastName": "Ahmed",
+        "email": "hoor.ahmed@example.com",
+        "phone": "+20 123 456 7890",
+        "inquiryType": "Property Inquiry",
+        "howDidYouHearAboutUs": "Instagram",
+        "message": "Hello, I want to know more about your available properties.",
+        "agreeToTerms": true
+      }
+    },
+    "offices": [
+      {
+        "type": "Main Headquarters",
+        "address": "123 Estatein Plaza, City Center, Metropolis",
+        "email": "info@estatein.com",
+        "phone": "+1 (123) 456-7890",
+        "city": "Metropolis"
+      },
+      {
+        "type": "Regional Offices",
+        "address": "456 Urban Avenue, Downtown District, Metropolis",
+        "email": "info@restatein.com",
+        "phone": "+1 (123) 628-7890",
+        "city": "Metropolis"
+      } ,
+      {
+        "type": "Regional Offices",
+        "address": "456 Urban Avenue, Downtown District, Metropolis",
+        "email": "info@restatein.com",
+        "phone": "+1 (123) 628-7890",
+        "city": "Metropolis"
+      }
+    ],
+    "gallery": {
+      "headline": "Explore Estatein's World",
+      "description": "Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces."
+    },
+    "callToAction": {
+      "headline": "Start Your Real Estate Journey Today",
+      "buttonText": "Explore Properties",
+      "description": "Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way."
+    },
+    "footer": {
+      "nav": ["Home", "About Us", "Properties", "Services", "Contact Us"],
+      "sections": ["Hero Section", "Our Story", "Portfolio", "Valuation Mastery", "Contact Form", "Features", "Our Works", "Categories", "Strategic Marketing", "Our Offices", "Properties", "How It Works", "Negotiation Wizardry", "Testimonials", "Our Team", "Closing Success", "FAQ’s", "Our Clients", "Property Management"],
+      "copyright": "@2023 Estatein. All Rights Reserved.",
+      "terms": "Terms & Conditions"
+    }
+  }
+  
