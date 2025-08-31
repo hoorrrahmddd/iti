@@ -163,15 +163,17 @@ body{
     font-family: 'urbanist';
     padding: 18px 24px;
     border-radius: 5px;
+    transition: all 0.5s ease;
 }
-
+.browse_btn:hover{
+   transform: scale(1.1);
+}
 .cards{
     color: white;
     display: flex;
     gap: 20px;
    justify-content: space-evenly; 
- 
-
+   
    
 }
 
@@ -184,8 +186,14 @@ body{
     font-weight: 700;
     font-family: 'urbanist';
     font-size: 30px;
-
+    transition: all 0.5s ease;
 }
+
+.cards p:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 15px rgba(112, 59, 247, 0.8) ;;
+}
+
 
 .cards span{
     color:rgb(153,153,153) ;
@@ -235,7 +243,11 @@ body{
     padding: 25px;
     width: 100%;
     position: relative;
+   
 }
+
+
+
 .arrow{  
     position: absolute;
     top:0;
@@ -246,8 +258,8 @@ body{
 /* -------------------new-section------------------------- */
 
 .properties-section{
-    width: 100%;
-    min-height: 100vh;  
+    width: 100%; 
+    min-height: 100vh;   
    
 }
 
@@ -261,7 +273,7 @@ body{
   font-weight: 600;
 }
 .container-3 p:nth-of-type(2){
-    color:rgb(77,77,77);
+    color:rgb(153,153,153);
     font-family: 'urbanist';
     font-size: 15px;
     font-weight: 500;
@@ -285,20 +297,35 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(112, 59, 247, 0.8) ;
 }
+.slider{
+    overflow: hidden;
+}
 
 .properties{
     display: flex;
-    gap:10px;
-    width: 100%;
+    gap:5px;
+    width: 100%; 
+    justify-content: space-around;
+    transition: transform 0.5s;
 
 }
 .container-property{
     border: rgb(38,38,38) solid 1px;
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 10px;  
+    padding: 5px;
    color: white;
    font-family: 'urbanist';
-  
+    width: 100%; 
+    position: relative;
+    flex: 1 1 200px; 
+    min-width: 33.33%;
+
+
+}
+.container-property img{
+   max-width:80%;
+  display: block;
+  margin: 0 auto;
 
 }
 .details-1{
@@ -313,7 +340,7 @@ body{
 }
 .details-1 p:nth-of-type(2){
     font-family: 'urbanist' ;
-    font-size:18px;
+    font-size:15px;
     font-weight: 500;
     color:rgb(153,153,153);
 }
@@ -349,7 +376,7 @@ body{
     color:white;
     background-color:rgb(112, 59, 247) ;
     border-radius:5px ;
-    width: 200px;
+    width:50%;
     height: 40px;
     text-align: center;
     padding-top: 15px;
@@ -361,8 +388,38 @@ body{
     transform: scale(1.1);
     background-color:rgb(112, 20, 247) ;
 }
+.slides{
+    display: flex;
+    position: relative;
+    margin:20px ;
+   
+}
+.pre-btn,.next-btn{
+    background-color: rgb(38,38,38);
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 30%;
+    padding: 5px;
+    border: none;
+    transform: translateX(-50%);
+
+}
+#counter{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'urbanist';
+    position: absolute;
+    top: 0;
+    right: 30px;
+
+}
+
+
 
 /* --------------------new section-------------------- */
+
+
 .opinions-section{
     width: 100%;
     min-height: 100vh;  
@@ -380,7 +437,7 @@ body{
 
 }
 .container-4 p:nth-of-type(2){
-    color:rgb(77,77,77);
+    color:rgb(153,153,153);
     font-family: 'urbanist';
     font-size: 15px;
     font-weight: 500;
@@ -390,7 +447,7 @@ body{
     color: white;
     position: absolute;
     right:40px;
-    top:0;
+    top:40px;
     font-family:  'urbanist';
     background-color:rgb(26, 26, 26);
     padding: 15px;
@@ -446,7 +503,8 @@ body{
 }
 .container-5{
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
+   
     
 }
 .container-5 p:first-of-type{
@@ -457,7 +515,7 @@ body{
 
 }
 .container-5 p:nth-of-type(2){
-    color:rgb(77,77,77);
+    color:rgb(153,153,153);
     font-family: 'urbanist';
     font-size: 15px;
     font-weight: 500;
@@ -466,7 +524,7 @@ body{
  text-decoration: none;
     color: white;
     position: absolute;
-    top:0;
+    top:40px;
     right:40px;
     font-family:  'urbanist';
     background-color:rgb(26, 26, 26);
@@ -531,7 +589,7 @@ body{
     position: relative;
     margin-top: 40px;
     margin-bottom: 40px;
-    border: 10px solid rgb(20,20,20);
+    border: 10px solid rgb(20,20,20);   
 }
 .last-p p:first-of-type{
   color: white;
@@ -551,7 +609,7 @@ body{
     text-decoration: none;
     color: white;
     font-family:  'urbanist';
-    background-color:rgb(26, 26, 26);
+    background-color:rgb(112,59,247);
     padding: 10px;
     border:rgb(38,38,38) 2px solid;
     border-radius: 5px;
@@ -564,25 +622,6 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(112, 59, 247, 0.8) ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -634,17 +673,27 @@ body{
         flex-wrap: wrap;
     }
     .properties{
-       
         flex-wrap: wrap;
     }
-
-   .container-property:nth-child(1),
+    .container-property:nth-child(1), 
    .container-property:nth-child(2){
-    flex: 1 1 45%;
+    flex: 1 1 calc(50%-20px);
 
-   }
+   } 
     .container-property:nth-child(3){
-        flex: 1 1 100%;
+        flex:1  1 calc(100%-40px);
+    }
+    .container-property:nth-child(n+4){
+       display: none; 
+        
+    }
+    .last-p{
+      padding: 30px;
+    }
+    .last-p a{
+        position: relative;
+        top: 0;
+        left: 10px;
     }
     }
     
@@ -652,7 +701,80 @@ body{
 
     @media(max-width:760px){
         body{
-            background-color: aliceblue;
+            /* background-color: aliceblue; */
         }
+      .hero_section{
+        flex-direction: column-reverse;
+    
+      }
+      .img{
+       max-width: 100%;
+       text-align: center;
+      }
+      .container{
+        max-width: 100%;
+      }
+      .button{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; 
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        margin: auto;
+    
+      }
+      .Learn_btn,.browse_btn{
+        width: 300px; 
+      }
+      .cards{
+        flex-wrap: wrap;
+        max-width:90%;
+        gap: 15px;
+
+      }
+      .cards p{
+        min-width: 100px; 
+        flex: 1 1 30% ;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+       
+      }
+      .cards p:nth-child(1),
+      .cards p:nth-child(2){
+         flex: 1 1 20%;
+      }
+      
+      .cards p:nth-child(3){
+        flex: 1 1 100%;
+        margin-top: 0;
+      }
+      .container-2{
+        flex-wrap: wrap;
+        max-width: 100%;
+      }
+      .container-2 div:nth-child(1),
+      .container-2 div:nth-child(2){
+        flex: 1 1 35%;
+
+      }
+      .container-2 div:nth-child(3),
+      .container-2 div:nth-child(4){
+        flex: 1 1 35%;
+      }
+      .properties{
+        max-width: 100%;
+        flex-wrap: wrap;
+         flex-direction: column;
+      }
+      .container-property{
+       
+      }
+      
+
+
+     
 
     }
