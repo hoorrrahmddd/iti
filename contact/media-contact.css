@@ -4,6 +4,7 @@
   .card {
     flex: 1 1 calc(50% - 10px);
   }
+  
   .form-item  {
     flex: 1 1 calc(50% - 10px);
 }
@@ -11,6 +12,10 @@
   flex: 1 1 calc(50% - 10px);
 }
 }
+/* @media screen and (min-width: 641px) and (max-width: 768px) {
+  
+} */
+
 
 /* Medium screens (md: ≥768px) */
 @media (min-width: 768px) {
@@ -24,6 +29,20 @@
   .ph-third-row
   {
     grid-template-columns: 1fr 1fr
+  }
+
+ 
+}
+
+/* Large screens (lg: ≥1024px) */
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 1 calc(25% - 15px); 
+  }
+  .form-item { flex: 1 1 calc(25% - 15px); }
+
+  .item-five {
+    flex: 1 1 calc(25% - 10px);
   }
   .footer-body {
     
@@ -66,19 +85,6 @@
   .hamburger {
     display: none;
   } 
- 
-}
-
-/* Large screens (lg: ≥1024px) */
-@media (min-width: 1024px) {
-  .card {
-    flex: 0 1 calc(25% - 15px); 
-  }
-  .form-item { flex: 1 1 calc(25% - 15px); }
-
-  .item-five {
-    flex: 1 1 calc(25% - 10px);
-  }
 
 }
 

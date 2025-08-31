@@ -1,54 +1,98 @@
 
-
+/* Small screens (sm: ≥640px) */
 @media (min-width: 640px) {
-    .card {
-      flex: 1 1 calc(50% - 10px);
-    }
-
+  .card {
+    flex: 1 1 calc(50% - 10px);
   }
-@media (min-width: 768px){
-    .list {
-        display: flex !important;
-        position: static;
-        flex-direction: row;
-        align-items: center;
-        width: auto;
-        background-color: transparent;
-        gap: 30px;
-        padding: 0;
-      }
+  
+  .form-item  {
+    flex: 1 1 calc(50% - 10px);
+}
+.item-five {
+  flex: 1 1 calc(50% - 10px);
+}
+}
+/* @media screen and (min-width: 641px) and (max-width: 768px) {
+  
+} */
+
+
+/* Medium screens (md: ≥768px) */
+@media (min-width: 768px) {
+  .card {
+      flex: 1 1 calc(33.333% - 10px);
+  }
+  .form-item { flex: 1 1 calc(33.333% - 10px); }
+  .item-five {
+    flex: 1 1 calc(33.333% - 10px);
+  }
+  .ph-third-row
+  {
+    grid-template-columns: 1fr 1fr
+  }
+
+ 
+}
+
+/* Large screens (lg: ≥1024px) */
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 1 calc(25% - 15px); 
+  }
+  .form-item { flex: 1 1 calc(25% - 15px); }
+
+  .item-five {
+    flex: 1 1 calc(25% - 10px);
+  }
+  .footer-body {
     
-      .list ul {
-        display: flex;
-        flex-direction: row; 
-        gap: 20px;
-      }
-      .hamburger {
-        display: none;
-      } 
-      .card {
-        flex: 1 1 calc(25% - 10px);
-    }
-      .footer-body {
-    
-        flex-direction: row; /* row on desktop */
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-    
-      .footer-txt {
-        display: flex;
-        flex-direction: row; /* items in a row */
-        gap: 50px;
-      }
-    
-      /* reset margins for desktop */
-      .footer-item:nth-child(odd) {
-        margin-bottom: 0;
-      }
-     .Bottom-Footer
-      {
-        display: flex;
-        flex-direction: row;
-      }
+    flex-direction: row; /* row on desktop */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-txt {
+    display: flex;
+    flex-direction: row; /* items in a row */
+    gap: 50px;
+  }
+
+  /* reset margins for desktop */
+  .footer-item:nth-child(odd) {
+    margin-bottom: 0;
+  }
+ .Bottom-Footer
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .list {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: transparent;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .list ul {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+  }
+  .hamburger {
+    display: none;
+  } 
+
+}
+
+/* Extra large screens (xl: ≥1280px) */
+@media (min-width: 1280px) {
+  .card {
+    flex: 1 1 calc(20% - 15px); 
+  }
+  .form-item { flex: 1 1 calc(20% - 15px); 
+  }
 }
